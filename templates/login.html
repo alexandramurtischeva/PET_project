@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Shopping website</title>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/lightslider.css">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/lightslider.js"></script>
+
+</head>
+<body>
+
+{% include 'header.html'%}
+
+<div class="form">
+    <!---Log-in----------->
+    <div class="login-form">
+
+        </a>
+        <strong>Log in</strong>
+        <form>
+            <input type="email" placeholder="Example@gmail.com" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="submit" value="Log in">
+        </form>
+        <div class="form-btns">
+        <a href="#" class="forget">Forgot your password?</a>
+        <a href="sign_up" class="sign-up-btn">Create account</a>
+            </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).on('click', '.user, .already-account', function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+
+    $(document).on('click', '.sign-up-btn', function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+
+    $(document).on('click', '.form-cancel', function (){
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
+    });
+
+</script>
+
+
+</body>
+</html>
