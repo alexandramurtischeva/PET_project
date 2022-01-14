@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Shopping website</title>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/lightslider.css">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/lightslider.js"></script>
+
+</head>
+<body>
+{% include 'header.html'%}
+
+<div class="form-s">
+    <!----Sign-up------->
+        <div class="sign-up-form">
+        </a>
+        <strong>Sign up</strong>
+        <form>
+            <input type="text" placeholder="Full name" name="name" required>
+            <input type="text" placeholder="City" name="city" required>
+            <input type="text" placeholder="Country" name="country" required>
+            <input type="text" placeholder="Address" name="address" required>
+            <input type="email" placeholder="Example@gmail.com" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="submit" value="Sign up">
+        </form>
+        <div class="form-btns">
+            <a href="/login" class="already-account">Already have an account?</a>
+            </div>
+        </div>
+</div>
+
+</body>
+
+</html>
